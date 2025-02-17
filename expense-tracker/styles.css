@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #c4c4c4;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #6200ea;
+  margin-bottom: 1rem;
+}
+
+#expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#expense-form input {
+  padding: 0.75rem;
+  border: 1px solid #5131f3;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+#expense-form button {
+  padding: 0.75rem;
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#expense-form button:hover {
+  background-color: #3700b3;
+}
+
+#expense-list {
+  margin-top: 1rem;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-item span {
+  font-size: 1rem;
+}
+
+.expense-item div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#expense-list span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#expense-list .edit-btn {
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#expense-list .delete-btn {
+  background-color: #fff;
+  /* color: #000000; */
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#expense-list .edit-btn:hover {
+  background-color: #eaeaea;
+}
+
+#expense-list .delete-btn:hover {
+  background-color: #eaeaea;
+}
+
+.total-expenses {
+  text-align: center;
+}
+
+.total-expenses h3 {
+  color: #6200ea;
+  font-size: 1.5rem;
+}
